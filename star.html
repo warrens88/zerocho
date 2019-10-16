@@ -8,45 +8,33 @@
 </head>
 <body>
     <script>
-        
         for(var star = 0; star <= 5; star += 1){
             console.log('*'.repeat(star+1))
         }
+
         for(var star = 5; star >= 1; star -=1){
             console.log(' '.repeat(6 - star) + '*'.repeat(star))
         }
-        for(var star = 9; star >= 1; star -= 2){
-            console.log(' '.repeat((9 - star) / 2) + '*'.repeat(star))
-        }
+
         for(var star = 9; star >= 1; star -=2){
             console.log(' '.repeat((9 - star) / 2) + 'a'.repeat(star))
         }
 
         for(var star = 0; star <= 9; star += 1){
-            console.log(' '.repeat((9 - star) / 2) + 'b'.repeat(star))
-        }
-
-        for(var star = 0; star <= 12; star += 1){
-            console.log(' '.repeat((12 - star) / 2) + 'c'.repeat(star))
-        }
-
-        for(var star = 0; star <= 12; star += 1){
-            console.log(' '.repeat((12 - star) / 2) + 'd'.repeat(star))
+            console.log(' '.repeat((9 - star) / 2) + '1'.repeat(star))
         }
 
         for(var star = 0; star <= 5; star += 1){
-            console.log('*'.repeat(star+1))
+            console.log('*'.repeat(star+1));
         }
 
-        for(var star = 0; star <= 5; star += 1){
-            console.log('*'.repeat(star))
+        for(var star = 5; star >= 1; star -=1){
+            console.log(' '.repeat(6 - star) + '*'.repeat(star))
         }
 
-        for(var star = 0; star <= 5; star += 1){
-            console.log('*'.repeat(star+1))
+        for(var star = 9; star >= 1; star -=2){
+            console.log(' '.repeat((9 - star) / 2) + 'a'.repeat(star))
         }
-
-        
     </script>
 </body>
 </html>
