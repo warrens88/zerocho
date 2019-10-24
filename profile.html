@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,th,td{border:1px solid #ccc; border-collapse: collapse; height:30px; text-align:center; width:200px;}
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        
+            var Sung = {
+                name : 'wookyung',
+                age : 32,
+                city : 'Seoul',
+            }
+        
+
+        $(document).ready(function(){
+            $('#profile').click(function(){
+                $('#info').html('<tr>' + '<td>' + Sung.name + '</td>' + '<td>' + Sung.age + '</td>' + '<td>' + Sung.city + '</td>' + '</tr>');
+            });
+        });
+
+
+
+    </script>
+</head>
+<body>
+    <table id="profile">
+         <thead>
+             <tr>
+                 <th>이름</th>
+                 <th>나이</th>
+                 <th>주소</th>
+             </tr>
+         </thead>
+         <tbody id="info">
+             
+         </tbody>
+    </table>
+</body>
+</html>
