@@ -18,7 +18,7 @@
     var 결과창 = document.createElement('div');
     document.body.append(결과창);
 
-    폼.addEventListener('submit',function(이벤트){
+    폼.addEventListener('submit',function 콜백함수 (이벤트){
         이벤트.preventDefault();
         if(단어.textContent[단어.textContent.length - 1] === 입력창.value[0]){
             결과창.textContent = '딩동댕';
@@ -34,13 +34,3 @@
 
     
 
-    // var word = '성우경'
-    //     while(true){
-    //         var answer = prompt(word)
-    //         if(word[word.length - 1] === answer[0]){
-    //             alert('딩동댕')
-    //             word = answer
-    //         } else {
-    //             alert('땡')
-    //         }
-    //     }
